@@ -1,0 +1,29 @@
+.page-wrapper {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 26px;
+  .ivu-page {
+    float: right;
+  }
+}
+
+.simple-total {
+  line-height: 25px;
+  margin-top: 1rem;
+  color: #666;
+}
+
+.img-space-del-table {
+  font-size: 0;
+  img {
+    margin: 10px 0;
+  }
+}
+
+.handle-edit-btn {
+  text-align: right;
+  .ivu-btn {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+}

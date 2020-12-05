@@ -1,0 +1,38 @@
+.card {
+  .card-item {
+    padding: rem(15px);
+    border-radius: rem(5px);
+    background: #F8F8F8;
+    border: 2px dashed transparent;
+    cursor: pointer;
+    transition: border-color, background .2s linear;
+    &:not(:last-child) {
+      margin-bottom: rem(20px);
+    }
+    &.active,
+    &:hover {
+      border-color: $theme-default;
+      background: lighten(#F8F8F8, 1%);
+      @each $name in map-keys($theme-map) {
+        $value: map-get($theme-map, $name);
+        &.card-#{$name} {
+          border-color: $value;
+        }
+      }
+    }
+    &.active {
+      border-style: solid;
+    }
+  }
+  .card-header {
+    border-bottom: 1px solid #F1F1F1;
+    font-size: rem(18px);
+    line-height: rem(55px);
+    color: $color-extra-dark;
+  }
+  .card-body {
+    font-size: rem(16px);
+    line-height: rem(26px);
+    color: $color-dark;
+  }
+}

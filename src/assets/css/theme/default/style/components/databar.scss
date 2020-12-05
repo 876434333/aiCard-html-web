@@ -1,0 +1,33 @@
+.databar {
+  display: flex;
+  .databar-item {
+    flex: 1;
+    @extend %ellipse;
+    &:not(:last-child) {
+      border-right: rem(4px) solid #F8F8F8;
+    }
+    em {
+      float: right;
+      margin-left: rem(10px);
+    }
+  }
+  li {
+    padding: 0 rem(20px);
+    font-size: rem(16px);
+    line-height: rem(44px);
+    color: $color-extra-dark;
+    @extend %ellipse;
+    &:not(:last-child) {
+      border-bottom: 1px solid #F1F1F1;
+    }
+  }
+  .databar-title {
+    background: #F2F5F8;
+    color: $color-normal;
+    border-bottom: none;
+    .icon,
+    .ivu-icon {
+      cursor: pointer;
+    }
+  }
+}

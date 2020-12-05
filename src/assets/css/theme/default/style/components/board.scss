@@ -1,0 +1,40 @@
+.board {
+  padding: rem(10px) 0;
+  box-shadow: 0 2px 8px 0 #DCDCDC;
+  border-radius: rem(5px);
+  background: #FFFFFF;
+  @each $name in map-keys($theme-map) {
+    &.board-#{$name} {
+      .board-header {
+        &::before {
+          background: map-get($theme-map, $name);
+        }
+      }
+    }
+  }
+  .board-header {
+    position: relative;
+    margin-left: rem(20px);
+    padding: rem(10px) rem(20px) rem(10px) 0;
+    border-bottom: 1px solid #F1F1F1;
+    font-size: rem(20px);
+    color: $color-dark;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      margin-top: rem(-10px);
+      top: 50%;
+      left: rem(-20px);
+      width: rem(4px);
+      height: rem(20px);
+      background: $theme-default;
+    }
+  }
+  .board-body {
+    padding: rem(20px);
+    font-size: rem(16px);
+    line-height: rem(36px);
+    color: $color-extra-dark;
+  }
+}

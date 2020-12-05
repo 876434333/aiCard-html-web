@@ -1,0 +1,62 @@
+.list {
+  li {
+    padding: rem(10px) rem(20px);
+    transition: color, background .2s linear;
+    &:not(:last-child) {
+      border-bottom: 1px solid #F8F8F8;
+    }
+    &.active,
+    &:hover {
+      background: $theme-primary;
+      .list-item-title,
+      .list-item-info,
+      .list-item-ext,
+      .icon {
+        color: #FFF;
+      }
+      @each $name in map-keys($theme-map) {
+        .c-#{$name} {
+          color: #FFF;
+        }
+      }
+    }
+  }
+  .list-item {
+    color: $color-normal;
+    @extend %clearfix;
+  }
+  .list-item-title {
+    font-size: rem(20px);
+    line-height: rem(40px);
+    color: $color-extra-dark;
+  }
+  .list-item-info {
+    font-size: rem(16px);
+    .icon {
+      vertical-align: middle;
+      margin-left: rem(8px);
+      font-size: rem(15px);
+    }
+  }
+  .list-item-ext {
+    display: table;
+    float: right;
+    height: rem(64px);
+    margin: 0 0 0 rem(10px);
+    font-size: rem(20px);
+    p {
+      font-size: rem(16px);
+    }
+    .ivu-icon {
+      margin-right: rem(10px);
+      font-size: rem(22px);
+    }
+    .list-item-ext-text {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+  .list-item-main {
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,29 @@
+.nail {
+  font-size: 0;
+  &.nail-f-lg {
+    h3 {
+      font-size: rem(36px);
+    }
+  }
+}
+
+.nail-item {
+  display: inline-block;
+  padding: 0 rem(20px);
+  min-width: rem(160px);
+  border-radius: rem(5px);
+  text-align: center;
+  background: #F8F8F8;
+  &:not(:last-child) {
+    margin-right: rem(20px);
+  }
+  h3 {
+    font-size: rem(30px);
+    line-height: rem(48px);
+    color: $theme-success;
+  }
+  p {
+    font-size: rem(14px);
+    color: $color-normal;
+  }
+}

@@ -1,0 +1,247 @@
+.circle {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.circle-search {
+  .search-item {
+    float: left;
+    margin-right: rem(20px);
+  }
+}
+
+.circle-list {
+  margin-top: rem(10px);
+}
+
+.circle-content {
+  .ivu-card {
+    margin-bottom: 10px;
+  }
+  .ivu-card-body {
+    padding: 0;
+  }
+  .item-headder {
+    padding: rem(16px);
+    &>div {
+      float: left;
+      img {
+        width: rem(50px);
+        height: rem(50px);
+      }
+      &.header-msg {
+        width: rem(1100px);
+        padding-left: rem(10px);
+        margin-top: rem(4px);
+        &>p {
+          font-weight: 600;
+        }
+        .header-time {
+          display: block;
+          margin: rem(4px) 0px;
+          color: rgb(128, 128, 128);
+        }
+        section {
+          p {
+            margin-bottom: rem(10px);
+            &.multi-row-ellipsis {
+              @include multi-row-ellipsis(2);
+            }
+          }
+          .circle-img {
+            width: rem(110px);
+            height: rem(110px);
+            margin-right: rem(10px);
+            &.company {
+              border: rem(10px) solid #ececec;
+            }
+            &.detail {
+              display: block;
+              width: rem(400px);
+              height: auto;
+              margin: 10px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .item-action {
+    cursor: pointer;
+    .iconfont {
+      font-family: "iconfont" !important;
+      margin-right: 10px;
+      &:hover {
+        font-size: rem(20px);
+        color: $theme-primary;
+      }
+    }
+    border-top: 1px solid #f2f2f5; // border-bottom: 1px solid #dcd4d4;
+    text-align: center;
+    height: rem(44px);
+    .ivu-col {
+      margin-top: rem(8px);
+      height: rem(26px);
+      line-height: rem(26px);
+    }
+    .ivu-col:not(:last-child) {
+      border-right: 1px solid rgb(217, 217, 217);
+    }
+  }
+}
+
+.circle-row {
+  text-align: left;
+  &>div {
+    float: left;
+  }
+}
+
+.circle-row-comment {
+  font-size: 0;
+  img {
+    width: rem(40px);
+    height: rem(40px);
+    border-radius: 50%;
+    display: inline-block
+  }
+  p {
+    margin-left: rem(10px);
+    font-size: 12px;
+  }
+}
+
+.circle-row-dynamic {
+  font-size: 0;
+  img {
+    max-width: rem(100px);
+    height: rem( 60px);
+    margin: rem(10px);
+  }
+  p {
+    font-size: 12px;
+    @include multi-row-ellipsis(3);
+  }
+}
+
+.circle-row-action {
+  color: $theme-primary;
+  cursor: pointer;
+}
+
+.cropper-container {
+  margin: auto;
+  &>div {
+    margin: 20px auto;
+    width: 720px;
+  }
+  section {
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    p {
+      margin-bottom: 10px;
+    }
+  }
+  .vue-cropper {
+    width: 720px !important;
+    height: 300px !important;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+}
+
+.img-upload {
+  margin-left: 25px;
+}
+
+.circle-cover-img {
+  &.ivu-form-item {
+    margin-bottom: 0;
+  }
+  img {
+    width: rem(120px);
+    height: rem(120px);
+  }
+}
+
+.circle-smeditor {
+  position: relative;
+  .smeditor {
+    width: 100%;
+  }
+  .input-area {
+    // min-height: 300px !important;
+  }
+  .img {
+    position: absolute;
+    top: 0;
+    left: 720px;
+    z-index: 20;
+    .ivu-upload {
+      height: 47px;
+      &>div {
+        height: 47px;
+        line-height: 47px;
+      }
+    }
+  }
+}
+
+.circle-add-preview {
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.circle-add-submit {
+  text-align: right;
+  .ivu-btn {
+    margin-left: 20px;
+    span {
+      display: inline-block;
+      margin: 0 30px;
+    }
+  }
+}
+
+.circle-detail-zanOrPing {
+  .iconfont {
+    font-family: "iconfont" !important;
+  }
+  .zan {
+    color: #6e87bd;
+  }
+  .ping {
+    margin-bottom: rem(30px);
+    .name {
+      font-weight: bold;
+    }
+    .action {
+      &>section {
+        float: left;
+        &.time {
+          margin-left: rem(50px);
+        }
+        &.del {
+          cursor: pointer;
+          float: right;
+          span {
+            color: #6e87bd;
+          }
+        }
+      }
+    }
+  }
+}
+
+.circle-detail-image-show {
+  img {
+    display: block;
+    width: rem(350px) !important;
+    height: auto !important;
+    margin: rem(10px) 0;
+  }
+}

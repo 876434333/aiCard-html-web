@@ -1,0 +1,16 @@
+.fold {
+  margin: rem(20px) 0;
+  .fold-header {
+    position: relative;
+    border-bottom: 1px solid #F1F1F1;
+    font-size: rem(20px);
+    line-height: rem(46px);
+    .fold-collapse {
+      position: absolute;
+      right: rem(15px);
+      top: rem(23px);
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+  }
+}

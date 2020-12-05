@@ -1,0 +1,33 @@
+.node {
+  margin: 0 0 rem(30px);
+  .node-header {
+    padding: 0 rem(20px);
+    font-size: rem(18px);
+    line-height: rem(28px);
+    color: $color-extra-dark;
+    overflow: hidden;
+  }
+  .node-header-btn {
+    color: #02C1DE;
+    &:hover {
+      color: $theme-success_hover;
+    }
+  }
+  .node-body {
+    padding: rem(10px) 0;
+  }
+  .node-item {
+    display: block;
+    margin: 1px 0;
+    padding: rem(10px) rem(50px);
+    font-size: rem(16px);
+    line-height: rem(32px);
+    color: $color-dark;
+    transition: background .2s linear;
+    @extend %ellipse;
+    &:hover,
+    &.active {
+      background: #F1F1F1;
+    }
+  }
+}

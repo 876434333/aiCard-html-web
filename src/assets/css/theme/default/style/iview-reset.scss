@@ -1,0 +1,73 @@
+// reset iview style
+.ivu-tag {
+  background: #fff;
+}
+
+.ivu-tag-checked {
+  background: #f1f1f1;
+}
+
+.ivu-input-group {
+  &.ivu-input-group-with-prepend {
+    .ivu-input-group-prepend {
+      background-color: transparent;
+      border-right-width: 0;
+    }
+  }
+}
+
+.ivu-form-inline {
+  .ivu-form-item:last-child {
+    margin-right: 0;
+  }
+}
+
+.ivu-modal-header p,
+.ivu-modal-header-inner {
+  font-size: rem(24px);
+  line-height: initial;
+  height: auto;
+}
+
+.modal-lg {
+  .ivu-modal {
+    width: rem(820px) !important;
+  }
+}
+
+.modal-nm {
+  .ivu-modal {
+    width: rem(600px) !important;
+  }
+}
+
+.ivu-form .ivu-form-item-label {
+  font-size: rem(16px);
+}
+
+.ivu-spin-fix {
+  background-color: RGBA(0, 0, 0, .15)
+}
+
+.ivu-form-item-append {
+  display: inline-block;
+  margin-left: -8px;
+  padding: 8px 12px 8px 0;
+  font-size: rem(16px);
+  vertical-align: middle;
+  color: #495060;
+}
+
+// .ivu-tabs {
+//   .ivu-tabs-tab-active {
+//     color: #2C393F;
+//     font-weight: bold;
+//   }
+//   .ivu-tabs-ink-bar {
+//     background-color: #2C393F;
+//   }
+// }
+
+.ivu-date-picker-transfer {
+  font-size: rem(12px);
+}
